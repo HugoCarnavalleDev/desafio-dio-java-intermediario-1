@@ -36,7 +36,7 @@ O projeto representa o iPhone como um dispositivo multifuncional, com três func
 ## Referências
 
 - **Vídeo do Lançamento do iPhone - 2007**
-  - Link: [YouTube - Apple iPhone Launch](https://www.youtube.com/watch?v=9ou608QQRq8&ab_channel=TuchilaRino)
+  - Link: [YouTube - Lançamento do Primeiro iPhone](https://www.youtube.com/watch?v=9ou608QQRq8&ab_channel=TuchilaRino)
   - Trecho relevante: de **00:15 até 00:55**
 
 - **Repositório GitHub**
