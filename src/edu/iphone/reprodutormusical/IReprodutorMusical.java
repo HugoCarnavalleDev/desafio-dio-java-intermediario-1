@@ -1,6 +1,6 @@
 package edu.iphone.reprodutormusical;
 
-public interface ReprodutorMusical {
+public interface IReprodutorMusical {
 
     void tocarMusica(String musica);
     

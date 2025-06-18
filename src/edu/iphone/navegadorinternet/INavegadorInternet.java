@@ -1,6 +1,6 @@
 package edu.iphone.navegadorinternet;
 
-public interface NavegadorInternet {
+public interface INavegadorInternet {
     void abrirPagina(String url);
     
     void fecharPagina();

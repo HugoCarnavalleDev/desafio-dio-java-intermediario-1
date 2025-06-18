@@ -1,6 +1,6 @@
 package edu.iphone.aparelhotelefonico;
 
-public interface AparelhoTelefonico {
+public interface IAparelhoTelefonico {
 
     void fazerChamada(String numero);
     
