@@ -24,8 +24,8 @@ O projeto representa o iPhone como um dispositivo multifuncional, com três func
 - `selecionarMusica(String musica)`
 
 ### Aparelho Telefônico
-- `ligar(String numero)`
-- `atender()`
+- `realizarLigação(String numero)`
+- `atenderLigacao()`
 - `iniciarCorreioVoz()`
 
 ### Navegador na Internet
@@ -40,7 +40,7 @@ O projeto representa o iPhone como um dispositivo multifuncional, com três func
   - Trecho relevante: de **00:15 até 00:55**
 
 - **Repositório GitHub**
-  - Link: [Desafio POO pela DIO.me](https://github.com/digitalinnovationone/trilha-java-basico/tree/main/desafios/poo)
+  - Link: [Desafio de POO pela DIO.me](https://github.com/digitalinnovationone/trilha-java-basico/tree/main/desafios/poo)
 
 
 ## Ferramentas Utilizadas
@@ -55,19 +55,13 @@ O projeto representa o iPhone como um dispositivo multifuncional, com três func
 classDiagram
     class IReprodutorMusical {
         <<interface>>
-        %% -nomeMidea : String
-        %% -nomeArtista : String
-        %% -nomeAlbum : String
-        %% -anoLancamento : int
-        %% -genero : String
-        %% -tempoDuracao : double
-
         +tocarMusica() void
+        +pausarMusica() void
+        +selecionarMusica(String musica) void
+
         +reproduzirVideo() void
         +widescreenModo() void
         +telaCheia() void
-        +pausar() void
-        +selecionarMusica(String musica) void
         +aumentarVolume() void
         +diminuirVolume() void
         +proximaMusica() void
@@ -80,24 +74,19 @@ classDiagram
 
     class IAparelhoTelefonico {
         <<interface>>
-        %% -nomeContato : String
-        %% -numeroContato : String
-        %% -emailContato : String
-        %% -enderecoContato : String
-
         %% Ligações
-        +sincronizarContatos() void
         +realizarLigacao(String numero) void
         +atenderLigacao() void
+        +iniciarCorreioVoz() void
+        
+        +sincronizarContatos() void
         +recusarLigacao() void
         +finalizarLigacao() void
         +ligacaoEmEspera() void
         +ligacaoEmConferencia() void
         +ligacaoPrivada() void
-        +iniciarCorreioVoz() void
         +adicionarFavoritos() void
         +removerFavoritos() void
-        +formatarNumeroTeclado() void
 
         %% SMS
         +receberMensagem() void
@@ -109,12 +98,11 @@ classDiagram
 
     class INavegadorInternet {
         <<interface>>
-        %% -enderecoUrl : String
-
         %% Web Browser
         +exibirPagina(String url) void
         +adicionarNovaAba() void
         +atualizarPagina() void
+
         +ampliarPagina() void
         +diminuirPagina() void
         +fecharAba() void
